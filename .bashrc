@@ -88,7 +88,14 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias l='ls -AlF'
+alias ..="cd .."
+alias ...="cd ../.."
+alias ls="ls -A --color -F --show-control-chars"
+alias l="ls -Al"
+alias m="less -FSRXc"
+alias cp="cp -i"
+alias rm="rm -i"
+alias mv="mv -i"
 alias vi='nvim'
 
 # Add an "alert" alias for long running commands.  Use like so:
