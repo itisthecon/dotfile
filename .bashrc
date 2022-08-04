@@ -89,6 +89,7 @@ fi
 
 # some more ls aliases
 alias l='ls -AlF'
+alias vi='nvim'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
