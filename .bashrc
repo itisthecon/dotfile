@@ -105,8 +105,12 @@ alias aptfiles='apt-file list'
 alias aptinfo='apt-cache show'
 alias apts='aptitude search'
 alias aptsearch='apt-cache search'
-alias aptshow='apt-cache showpkg'
+alias aptshow='apt-cache showpkg'~/.dotfiles/
 alias aptwhich='dpkg -S'
+alias l='exa -alFhg --git'
+alias ls='exa -F'
+
+function mcd () { mkdir -p "$1" && cd "$1"; }
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
