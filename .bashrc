@@ -97,6 +97,16 @@ alias cp="cp -i"
 alias rm="rm -i"
 alias mv="mv -i"
 alias vi='nvim'
+alias dus='du -hs *|sort -h'
+alias ....='cd ../../../'
+alias aptdep='apt-cache depends'
+alias aptdeped='apt-cache rdepends'
+alias aptfiles='apt-file list'
+alias aptinfo='apt-cache show'
+alias apts='aptitude search'
+alias aptsearch='apt-cache search'
+alias aptshow='apt-cache showpkg'
+alias aptwhich='dpkg -S'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
