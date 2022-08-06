@@ -7,6 +7,8 @@ sudo apt -y ugrade
 
 rm -f ~/.bashrc
 rm -f ~/.gitconfig
+rm -f ~/.vimrc
+sudo rm -f /usr/local/bin/nvim
 
 ln -s ~/.dotfiles/.bashrc ~/.bashrc
 ln -s ~/.dotfiles/.vimrc ~/.vimrc
