@@ -161,3 +161,5 @@ if ! [[ "${PROMPT_COMMAND:-}" =~ _direnv_hook ]]; then
 fi
 
 if [[ -n $SSH_CONNECTION ]]; then cd "/workspace/vaultwarden"; fi
+
+export PATH=$HOME/.dotfiles/execs:$PATH
