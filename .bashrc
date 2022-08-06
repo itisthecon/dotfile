@@ -90,8 +90,8 @@ fi
 # some more ls aliases
 alias ..="cd .."
 alias ...="cd ../.."
-alias ls="ls -A --color -F --show-control-chars"
-alias l="ls -Al"
+#alias ls="ls -A --color -F --show-control-chars"
+#alias l="ls -Al"
 alias m="less -FSRXc"
 alias cp="cp -i"
 alias rm="rm -i"
