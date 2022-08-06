@@ -3,7 +3,7 @@
 sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get update
 sudo apt-get -y install neovim
-sudo apt -y ugrade
+sudo apt -y upgrade
 
 rm -f ~/.bashrc
 rm -f ~/.gitconfig
