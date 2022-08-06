@@ -111,6 +111,12 @@ alias l='exa -alFhg --git'
 alias ls='exa -F'
 
 function mcd () { mkdir -p "$1" && cd "$1"; }
+function up_apt ()
+{
+    apt update;
+    apt upgrade;
+    apt autoremove;
+}
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
