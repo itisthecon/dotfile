@@ -109,6 +109,7 @@ alias aptshow='apt-cache showpkg'~/.dotfiles/
 alias aptwhich='dpkg -S'
 alias l='exa -alFhg --git'
 alias ls='exa -F'
+alias build_valt='cargo build --features sqlite --release'
 
 function mcd () { mkdir -p "$1" && cd "$1"; }
 function up_apt ()
