@@ -152,7 +152,7 @@ for i in $(ls -A $HOME/.bashrc.d/); do source $HOME/.bashrc.d/$i; done
 _direnv_hook() {
   local previous_exit_status=$?;
   trap -- '' SIGINT;
-  eval "$("/nix/store/hsjysmmgn231yqd2cb8kxci5xpq19wfp-direnv-2.32.1/bin/direnv" export bash)";
+  eval "$("/nix/store/3vql64vwk85jbqa14vw66nd2ngsqgv03-direnv-2.32.1/bin/direnv" export bash)";
   trap - SIGINT;
   return $previous_exit_status;
 };
