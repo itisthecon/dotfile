@@ -147,13 +147,14 @@ fi
 export PS1="\`if [ \$? = 0 ]; then echo \[\e[33m\]^_^\[\e[0m\]; else echo \[\e[31m\]O_O\[\e[0m\]; fi\`\033[;33;1m\W@\033[31m\h\033[;33;1m\\$\033[0m"
 
 
-for i in $(ls -A $HOME/.bashrc.d/); do source $HOME/.bashrc.d/$i; done
+for i in $(/usr/bin/ls -A $HOME/.bashrc.d/); do source $HOME/.bashrc.d/$i; done
 
 
 _direnv_hook() {
   local previous_exit_status=$?;
   trap -- '' SIGINT;
-  eval "$("/nix/store/3vql64vwk85jbqa14vw66nd2ngsqgv03-direnv-2.32.1/bin/direnv" export bash)";
+  dir_name=$(find /nix/store -maxdepth 1 -name *direnv* -type d)
+  eval "$("${dir_name}/bin/direnv" export bash)";
   trap - SIGINT;
   return $previous_exit_status;
 };
