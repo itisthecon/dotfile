@@ -18,3 +18,8 @@ set fileencodings=utf-8,gbk,ucs-bom,cp936
 set fileencoding=utf-8
 
 inoremap jk <ESC>
+
+" remember cursor position when reopening files
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+endif
